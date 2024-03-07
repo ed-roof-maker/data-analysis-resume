@@ -1,0 +1,9 @@
+sudo apt install $(cat work/apt-packages.txt)
+cd rlab-common/work
+bash venv-init.sh
+source venv/bin/activate
+pip list
+pip install -r requirements.txt
+pip install jupyter
+venv/bin/jupyter-notebook --ip=127.0.0.1
+
